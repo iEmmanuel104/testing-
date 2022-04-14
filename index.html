@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- defines the document type -->
+<html>
+<head> <!-- Contains metadata/information for the document -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register form</title> <!-- defines a title for the document -->
+</head>
+<body>
+	<!-- Use GET not POST -->
+	<span></span> <!-- inline element used to divide document into sections and to add specific functionality -->
+	<div> <!-- defines a section of a document -->
+		<form method="GET"> <!-- for creating forms -->
+			<p>First Name: <input type="text"name="firstname"><br></p>
+			<p>Last name: <input type="text"name="lastname"><br></p>
+			<p>Email: <input type="Email"name="mail" required><br></p>
+			<p>Password<input type="password"name="password"min="5"></p>
+			<p>Birthday:<input type="date" name="bday"><br></p>
+			Gender: <br>
+			<input type="radio" name="gender" value="Male">Male<br>
+			<input type="radio"name="gender" value="Female">Female<br>
+			<input type="radio" name="gender">Other<br>	
+			Pets:<br>
+			<input type="checkbox" name="cat">Cat<br>
+			<input type="checkbox" name="dogs">Dogs<br>		
+			cars: <br>
+			<select name="Car"> <!-- defines a drop down list -->
+				<option value="Volvo">Volvo</option>
+				<option value="Benz">Benz</option>
+				<option value="BMW">BMW</option>			
+			</select><br>		
+			<input type="submit" value="Register!">
+			<input type="reset">		
+		</form>
+    </div>
+</body>
+
